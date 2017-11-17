@@ -1,0 +1,16 @@
+div.wrapper {
+    height:800px;
+    width: 1500px;
+    display: table-cell;
+    vertical-align: middle;
+    /*border:1px solid black;*/
+}
+
+.center {
+    display: block;
+    margin : 0 auto;
+}
+
+.textInput {
+    width: 500px;
+}
