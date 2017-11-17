@@ -1,5 +1,6 @@
-function search(text) {
-    window.location.href = formatGoogleSearch(text);
+function search() {
+    // alert(formatGoogleSearch(document.getElementById('searchText').value));
+    window.location.href = formatGoogleSearch(document.getElementById('searchText').value);
 }
 
 function formatGoogleSearch(text) {
