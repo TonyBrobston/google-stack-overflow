@@ -4,5 +4,5 @@ function search() {
 }
 
 function formatGoogleSearch(text) {
-  return 'http://google.com/search?q=' + text.split(' ').join('+') + '+inurl%3Astackoverflow.com'
+  return 'http://google.com/search?q=' + text.split(' ').join('+') + '+site%3Astackoverflow.com'
 }
