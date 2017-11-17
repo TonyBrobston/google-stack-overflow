@@ -1,9 +1,5 @@
 div.wrapper {
-    height:800px;
-    width: 1500px;
-    display: table-cell;
-    vertical-align: middle;
-    /*border:1px solid black;*/
+    margin-top: 30%;
 }
 
 .center {
