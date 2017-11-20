@@ -11,7 +11,7 @@
           gtag('config', 'UA-109930265-1');
         </script>
         <!-- Google Analytics -->
-        
+
         <!-- Google Ads -->
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
@@ -19,7 +19,7 @@
             google_ad_client: "ca-pub-9080618858666851",
             enable_page_level_ads: true
           });
-        </script>        
+        </script>
         <!-- Google Ads -->
 
         <link rel="stylesheet" href="src/css/main.css">
@@ -27,8 +27,11 @@
     <body>
         <script src="src/js/main.js"></script>
         <div class="wrapper">
-            <input id="searchText" class="center textInput" type="text" onkeydown="if(event.key === 'Enter') { search(); }"/>
-            <input id="submitText" class="center" type="button" value="Search" onclick="search();"/>
+            <div class="searchWrapper">
+              <h1>Search Stack Overflow</h1>
+              <input id="searchText" class="center textInput" type="text" onkeydown="if(event.key === 'Enter') { search(); }"/>
+              <input id="submitText" class="center" type="button" value="Search" onclick="search();"/>
+            </div>
         </div>
     </body>
 </html>

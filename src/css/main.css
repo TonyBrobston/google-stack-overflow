@@ -1,5 +1,10 @@
-div.wrapper {
+.wrapper {
+    height: 100%;
+}
+
+.searchWrapper {
     margin-top: 25%;
+    text-align: center;
 }
 
 .center {
