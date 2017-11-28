@@ -1,8 +1,8 @@
-function search() {
-    // alert(formatGoogleSearch(document.getElementById('searchText').value));
-    window.location.href = formatGoogleSearch(document.getElementById('searchText').value);
+search = function() {
+  var searchText = document.getElementById('searchText').value;
+  window.location.href = formatGoogleSearch(searchText, ['stackoverflow']);
 }
 
-function formatGoogleSearch(text) {
-  return 'http://google.com/search?q=' + text.split(' ').join('+') + '+site%3Astackoverflow.com'
+window.onload = function() {
+  document.getElementById('searchText').focus();
 }
