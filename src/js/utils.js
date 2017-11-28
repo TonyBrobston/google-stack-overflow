@@ -6,6 +6,6 @@ buildSiteList = function(sites) {
   for (var i = 0; i < sites.length; i++) {
     sites[i] = 'site:' + sites[i] + '.com';
   }
-  return '[' + sites.join('|') + ']';
+  return '[' + sites.join(' | ') + ']';
 }
 

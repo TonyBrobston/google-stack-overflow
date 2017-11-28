@@ -3,8 +3,7 @@
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109930265-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
+        <script> window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
@@ -32,6 +31,24 @@
               <h1>Search Stack Overflow</h1>
               <input id="searchText" class="center textInput" type="text" onkeydown="if(event.key === 'Enter') { search(); }"/>
               <input id="submitText" class="center" type="button" value="Search" onclick="search();"/>
+              <div id="searchOptions">
+                <div class="center">              
+                  <input id="stackoverflow" type="checkbox" checked="checked"/>
+                  <label for="stackoverflow">stackoverflow</label>   
+                </div>
+                <div class="center">              
+                  <input id="serverfault" type="checkbox"/>
+                  <label for="serverfault">serverfault</label>   
+                </div>
+                <div class="center">              
+                  <input id="superuser" type="checkbox"/>
+                  <label for="superuser">superuser</label>   
+                </div>
+                <div class="center">              
+                  <input id="askubuntu" type="checkbox"/>
+                  <label for="askubuntu">askubuntu</label>   
+                </div>
+              </div>
             </div>
         </div>
     </body>

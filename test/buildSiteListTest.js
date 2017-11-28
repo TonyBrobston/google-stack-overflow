@@ -15,7 +15,7 @@ describe('Build site list', function() {
 
     siteList = buildSiteList(sites);
  
-    assert.equal(siteList, '[site:stackoverflow.com|site:askubuntu.com]');
+    assert.equal(siteList, '[site:stackoverflow.com | site:askubuntu.com]');
   });
 
   it('should format string for google', function() {
