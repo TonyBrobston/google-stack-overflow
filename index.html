@@ -21,6 +21,7 @@
         </script>
         <!-- Google Ads -->
 
+        <link rel="manifest" href="manifest.json">
         <link rel="stylesheet" href="src/css/main.css">
     </head>
     <body>
@@ -32,21 +33,21 @@
               <input id="searchText" class="center textInput" type="text" onkeydown="if(event.key === 'Enter') { search(); }"/>
               <input id="submitText" class="center" type="button" value="Search" onclick="search();"/>
               <div id="searchOptions">
-                <div class="center">              
+                <div class="center">
                   <input id="stackoverflow" type="checkbox" checked="checked"/>
-                  <label for="stackoverflow">stackoverflow</label>   
+                  <label for="stackoverflow">stackoverflow</label>
                 </div>
-                <div class="center">              
+                <div class="center">
                   <input id="serverfault" type="checkbox"/>
-                  <label for="serverfault">serverfault</label>   
+                  <label for="serverfault">serverfault</label>
                 </div>
-                <div class="center">              
+                <div class="center">
                   <input id="superuser" type="checkbox"/>
-                  <label for="superuser">superuser</label>   
+                  <label for="superuser">superuser</label>
                 </div>
-                <div class="center">              
+                <div class="center">
                   <input id="askubuntu" type="checkbox"/>
-                  <label for="askubuntu">askubuntu</label>   
+                  <label for="askubuntu">askubuntu</label>
                 </div>
               </div>
             </div>
