@@ -1,5 +1,6 @@
 function search() {
-    window.location.href = formatGoogleSearch(document.getElementById('searchText').value);
+  var searchText = document.getElementById('searchText').value;
+  window.location.href = formatGoogleSearch(searchText, ['stackoverflow']);
 }
 
 exports.buildSiteList = function(sites) {
