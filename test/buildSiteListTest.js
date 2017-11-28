@@ -21,11 +21,11 @@ describe('Build site list', function() {
 
   it('should format string for google', function() {
     var search = 'javascript';
-    var sites = ['stackoverflow'];
+    var sites = ['askubuntu'];
 
     googleSearch = main.formatGoogleSearch(search, sites);
 
-    assert.equal(googleSearch, 'http://google.com/search?q=javascript+site%3Astackoverflow.com');
+    assert.equal(googleSearch, 'http://google.com/search?q=javascript+[site:askubuntu.com]');
   });
 });
 
