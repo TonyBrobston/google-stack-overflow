@@ -13,3 +13,7 @@ buildSiteList = function(sites) {
   }
   return '[' + sites.join('|') + ']';
 }
+
+window.onload = function() {
+  document.getElementById('searchText').focus();
+}
