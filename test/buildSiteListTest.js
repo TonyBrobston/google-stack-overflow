@@ -1,12 +1,11 @@
 var chai = require('chai'); 
 var assert = chai.assert;
-var main = require('../src/js/main.js');
 
 describe('Build site list', function() {
   it('should be only stackoverflow', function() {
     var sites = ['stackoverflow'];
 
-    siteList = main.buildSiteList(sites);
+    siteList = buildSiteList(sites);
  
     assert.equal(siteList, '[site:stackoverflow.com]');
   });
@@ -14,7 +13,7 @@ describe('Build site list', function() {
   it('should be only stackoverflow and askubuntu', function() {
     var sites = ['stackoverflow', 'askubuntu'];
 
-    siteList = main.buildSiteList(sites);
+    siteList = buildSiteList(sites);
  
     assert.equal(siteList, '[site:stackoverflow.com|site:askubuntu.com]');
   });
@@ -23,7 +22,7 @@ describe('Build site list', function() {
     var search = 'javascript';
     var sites = ['askubuntu'];
 
-    googleSearch = main.formatGoogleSearch(search, sites);
+    googleSearch = formatGoogleSearch(search, sites);
 
     assert.equal(googleSearch, 'http://google.com/search?q=javascript+[site:askubuntu.com]');
   });
