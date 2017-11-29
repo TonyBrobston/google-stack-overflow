@@ -1,5 +1,5 @@
 formatGoogleSearch = function(text, sites) {
-  return 'http://google.com/search?q=' + text + '+' + buildSiteList(sites);
+  return 'https://google.com/search?q=' + text + '+' + buildSiteList(sites);
 }
   
 buildSiteList = function(sites) {
