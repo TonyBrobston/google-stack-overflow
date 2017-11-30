@@ -33,8 +33,11 @@
         <div class="wrapper">
             <div class="searchWrapper">
               <h1>Search Stack Overflow</h1>
+              <label for="searchText">
+                Search:
+              </label>
               <input id="searchText" class="center textInput" type="text" onkeydown="if(event.key === 'Enter') { search(); }"/>
-              <input id="submitText" class="center" type="button" value="Search" onclick="search();"/>
+              <input id="submitText" class="center" type="button" value="Submit" onclick="search();"/>
               <div id="searchOptions">
                 <div class="center">
                   <input id="stackoverflow" type="checkbox" checked="checked"/>
