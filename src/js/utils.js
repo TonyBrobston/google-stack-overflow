@@ -1,5 +1,9 @@
-formatGoogleSearch = function(text, sites) {
-  return 'https://google.com/search?q=' + text + '+' + buildSiteList(sites);
+formatGoogleSearch = function(text, sites, time) {
+  var googleSearch = 'https://google.com/search?q=' + text + '+' + buildSiteList(sites);
+  if (time != null) {
+   googleSearch += '&tbs=qdr:' + time; 
+  }
+  return googleSearch; 
 }
   
 buildSiteList = function(sites) {

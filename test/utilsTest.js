@@ -21,10 +21,21 @@ describe('Build site list', function() {
   it('should format string for google', function() {
     var search = 'javascript';
     var sites = ['askubuntu'];
+    var time = null;
 
-    googleSearch = formatGoogleSearch(search, sites);
+    googleSearch = formatGoogleSearch(search, sites, time);
 
     assert.equal(googleSearch, 'https://google.com/search?q=javascript+[site:askubuntu.com]');
+  });
+  
+  it('should format string for google with time', function() {
+    var search = 'javascript';
+    var sites = ['askubuntu'];
+    var time = 'y';;
+
+    googleSearch = formatGoogleSearch(search, sites, time);
+
+    assert.equal(googleSearch, 'https://google.com/search?q=javascript+[site:askubuntu.com]&tbs=qdr:y');
   });
 });
 
