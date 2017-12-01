@@ -24,7 +24,7 @@ describe('Build site list', function() {
 
     googleSearch = formatGoogleSearch(search, sites);
 
-    assert.equal(googleSearch, 'http://google.com/search?q=javascript+[site:askubuntu.com]');
+    assert.equal(googleSearch, 'https://google.com/search?q=javascript+[site:askubuntu.com]');
   });
 });
 
