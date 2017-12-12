@@ -1,7 +1,7 @@
 search = function() {
   var searchText = document.getElementById('searchText').value;
   var sites = [];
-  var searchOptions = document.getElementById('searchOptions').getElementsByTagName('div'); 
+  var searchOptions = document.getElementById('searchOptions').getElementsByTagName('div');
   for(i = 0; i < searchOptions.length; i++) {
     var searchOption = searchOptions[i];
     var checkbox = searchOption.querySelectorAll('input[type="checkbox"]')[0];
@@ -10,7 +10,8 @@ search = function() {
       sites.push(site);
     }
   }
-  window.location.href = formatGoogleSearch(searchText, sites);
+  var time = document.getElementById('time').value;
+  window.location.href = formatGoogleSearch(searchText, sites, time);
 }
 
 window.onload = function() {

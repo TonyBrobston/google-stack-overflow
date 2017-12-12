@@ -37,6 +37,14 @@
               </label>
               <input id="searchText" class="center textInput" type="text" onkeydown="if(event.key === 'Enter') { search(); }"/>
               <input id="submitText" class="center" type="button" value="Submit" onclick="search();"/>
+              <select id="time">
+                <option value="">Any time</option>
+                <option value="h">Past hour</option>
+                <option value="d">Past 24 hours</option>
+                <option value="w">Past week</option>
+                <option value="m">Past month</option>
+                <option value="y">Past year</option>
+              </select>
               <div id="searchOptions">
                 <div class="center">
                   <input id="stackoverflow" type="checkbox" checked="checked"/>
