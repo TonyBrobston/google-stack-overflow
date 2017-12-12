@@ -8,7 +8,7 @@ search = function() {
     if (checkbox.checked) {
       site = checkbox.id;
       sites.push(site);
-    }
+    } 
   }
   var time = document.getElementById('time').value;
   window.location.href = formatGoogleSearch(searchText, sites, time);
